@@ -1,0 +1,93 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background: url('scripts/images/employee-list.jpg') no-repeat center center fixed;
+  background-size: cover;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+
+/* Registration Box */
+.register-container {
+  background-color: rgba(0, 0, 0, 0.85);
+  padding: 40px 30px;
+  border-radius: 12px;
+  width: 400px;
+  box-shadow: 0 0 20px rgba(255, 204, 0, 0.4);
+}
+
+.register-form h2 {
+  text-align: center;
+  margin-bottom: 10px;
+  color: #ffcc00;
+}
+
+.subtitle {
+  text-align: center;
+  font-size: 0.95rem;
+  color: #ccc;
+  margin-bottom: 25px;
+}
+
+.register-form label {
+  font-weight: 600;
+  margin-top: 10px;
+  display: block;
+}
+
+.register-form input {
+  width: 100%;
+  padding: 10px;
+  margin-top: 5px;
+  border: none;
+  border-radius: 8px;
+  margin-bottom: 15px;
+  font-size: 1rem;
+}
+
+.register-form button {
+  width: 100%;
+  padding: 12px;
+  background-color: #ffcc00;
+  color: black;
+  font-weight: bold;
+  border: none;
+  border-radius: 25px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.register-form button:hover {
+  background-color: #e6b800;
+}
+
+.bottom-text {
+  margin-top: 15px;
+  text-align: center;
+  font-size: 0.9rem;
+}
+
+.bottom-text a {
+  color: #ffcc00;
+  text-decoration: none;
+}
+
+.bottom-text a:hover {
+  text-decoration: underline;
+}
+
+/* Responsive */
+@media screen and (max-width: 450px) {
+  .register-container {
+    width: 90%;
+  }
+}

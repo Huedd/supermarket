@@ -1,0 +1,99 @@
+{%load static%}
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Payroll - SEMS</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        background-color: #f4f6f7;
+        padding: 30px;
+      }
+
+      h2 {
+        text-align: center;
+        margin-bottom: 25px;
+      }
+
+      table {
+        width: 100%;
+        border-collapse: collapse;
+        background: white;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+      }
+
+      th,
+      td {
+        padding: 12px;
+        text-align: center;
+        border: 1px solid #ccc;
+      }
+
+      th {
+        background-color: #2c3e50;
+        color: white;
+      }
+
+      .download-btn {
+        padding: 6px 12px;
+        background-color: #27ae60;
+        color: white;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+      }
+
+      .download-btn:hover {
+        background-color: #219150;
+      }
+    </style>
+  </head>
+  <body>
+    <h2>Payroll Management</h2>
+
+    <table>
+      <thead>
+        <tr>
+          <th>Employee</th>
+          <th>Role</th>
+          <th>Salary</th>
+          <th>Download Payslip</th>
+        </tr>
+      </thead>
+      <tbody id="payrollTable">
+        <tr>
+          <td>Jane Doe</td>
+          <td>HR</td>
+          <td>$2,500</td>
+          <td>
+            <button class="download-btn" onclick="downloadPayslip('Jane Doe')">
+              Download
+            </button>
+          </td>
+        </tr>
+        <tr>
+          <td>John Smith</td>
+          <td>Supervisor</td>
+          <td>$2,800</td>
+          <td>
+            <button
+              class="download-btn"
+              onclick="downloadPayslip('John Smith')"
+            >
+              Download
+            </button>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+
+    <script>
+      function downloadPayslip(name) {
+        alert("Payslip downloaded for " + name);
+        // Add logic for PDF download later (optional)
+      }
+    </script>
+  </body>
+</html>
