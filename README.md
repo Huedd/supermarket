@@ -1,2 +1,2 @@
 # supermarket
-This is a supermarket POS and delivery site
+This is a supermarket that manages the employees' records and their roles
